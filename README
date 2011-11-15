@@ -1,0 +1,7 @@
+A Nagios Plugin to Monitor Ensemble
+
+Ensemble has a standard service available for use built into it, EnsLib.TCP.ServiceStatus. When included in your production, the service listens on a socket and parses an incoming string to determine what type of production status information is being requested, and then produces a reply string suitable for writing out to the console screen. Users interact with the status service directly, or for us script-o-holics, this is really a clean and easy way to write a command script that contacts the status service, issues commands, and writes the replies to a text file for later analysis. This makes for a lightweight, supported, monitoring solution that runs out of band from your Ensemble Productions. It can be used to monitor the system, or generate reports based on availability. Four score and many moons ago, I wrote a white paper, Monitoring an Enterprise PACS with Nagios and Cacti, and have employed Nagios as a standard snap in monitoring solution for just about everything in my past I have supported since the writing of that white paper. PACS, Core Systems, IBM Websphere, JBOSS... you name it, I have used Nagios to monitor it and report on availability. Now, the Intersystems Ensemble Service Bus is my latest victim utilizing the EnsLib.TCP.ServiceStatus to wrap a my Nagios plug-in around it.
+
+Enjoy!
+
+ron dot sweeney at gmail dot com
